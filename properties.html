@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+        <script src="react.min.js"></script>
+        <script src="react-dom.min.js"></script>
+        <script src="browser.min.js"></script>
+    </head>
+
+
+    <body>   
+        <div id="react-container"></div>
+        <script type="text/babel">        
+            
+            var MyComponent = React.createClass({
+            
+             render : function(){
+                  return <div> {this.props.children} in {this.props.color} </div>;
+             }
+             
+            });
+                  ReactDOM.render(<MyComponent color="red">Awesome</MyComponent>,document.getElementById('react-container'));
+                  
+                 
+            
+        </script>
+        
+        
+    </body>
+
+
+</html>

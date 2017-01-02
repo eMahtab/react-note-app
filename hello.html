@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <script src="react.min.js"></script>
+        <script src="react-dom.min.js"></script>
+        <script src="browser.min.js"></script>
+    </head>
+
+
+    <body>   
+        
+        <script type="text/babel">
+        
+          var HelloWorld=React.createClass({
+          
+              render : function(){
+                 return <div>
+                         <h1>Learning react</h1>
+                        </div>  
+              }
+          
+          })
+         
+            ReactDOM.render(<HelloWorld/>,document.body);
+            //ReactDOM.render(React.createElement('div',null,'Hello World !'),document.body);
+        </script>
+        
+        
+    </body>
+
+
+</html>

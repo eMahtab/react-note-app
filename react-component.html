@@ -1,0 +1,32 @@
+<html>
+
+    <head>
+        <script src="react.min.js"></script>
+        <script src="react-dom.min.js"></script>
+        <script src="browser.min.js"></script>
+    </head>
+
+
+    <body>   
+        <div id="react-container"></div>
+        <script type="text/babel">        
+            
+            var MyComponent = React.createClass({
+            
+             render : function(){
+                  return <div> My Component </div>;
+             }
+             
+            });
+                  ReactDOM.render(<MyComponent/>,document.getElementById('react-container'));
+                  
+                  ReactDOM.render(<div><MyComponent/><MyComponent/><MyComponent/></div>,
+                                  document.getElementById('react-container'));
+            
+        </script>
+        
+        
+    </body>
+
+
+</html>
